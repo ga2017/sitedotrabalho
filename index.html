@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<section>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <img src="imagem/WhatsApp Image 2024-12-12 at 08.44.25.jpeg" width="1350"  height="250">
+        <title>Street Mode - Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Street Mode</h1>
+            </div>
+    
+            <!-- Menu de Navegação -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    
+                    <!-- Menu suspenso para Camisas -->
+                    <li class="dropdown">
+                        <a href="camisa.html">Camisas</a>
+                        <ul class="dropdown-content">
+                        </ul>
+                    </li>
+                    
+                    <!-- Menu suspenso para Bermudas -->
+                    <li class="dropdown">
+                        <a href="bermuda.html">Bermudas</a>
+                        <ul class="dropdown-content">
+                        </ul>
+                    </li>
+                    
+                    <!-- Menu suspenso para Tênis -->
+                    <li class="dropdown">
+                        <a href="tenis.html">Tênis</a>
+                        <ul class="dropdown-content">
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+    
+        
+        </header>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
+    </section>
+    
+    
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Mode - Loja de Roupas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        </div>
+        <div class="cart">
+        </div>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <div class="product">
+                <img src="imagem/3031-xa3pc9xo57.webp" alt="Camiseta" />
+                <h3>Camiseta Street</h3>
+                <p class="preco">R$ 49,90</p>
+                <button onclick="addToCart('Camiseta Street', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="imagem/polar-skate-co-93-denim-light-blue.webp" alt="Calça Jeans" />
+                <h3>Calça Jeans</h3>
+                <p class="preco">R$ 79,90</p>
+                <button onclick="addToCart('Calça Jeans', 79.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="imagem/OIP.jpg" alt="Tênis Esportivo"/>
+                <h3>Tênis Nike</h3>
+                <p class="preco">R$ 129,90</p>
+                <button onclick="addToCart('Tênis Esportivo', 129.90)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="cart">
+        <div class="cart-content">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho aparecerão aqui -->
+            </ul>
+            <p id="total-price">Total: R$ 0,00</p>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </section> 
+    
+    <footer>
+        <p>&copy; 2024 Street Mode - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
+

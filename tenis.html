@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis - Loja Online</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Street Mode</h1>
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                
+                <!-- Menu suspenso para Camisas -->
+                <li class="dropdown">
+                    <a href="camisa.html">Camisas</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+                
+                <!-- Menu suspenso para Bermudas -->
+                <li class="dropdown">
+                    <a href="bermuda.html">Bermudas</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+                
+                <!-- Menu suspenso para Tênis -->
+                <li class="dropdown">
+                    <a href="tenis.html">Tênis</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    
+    </header>
+
+    <main>
+        <h2>Tênis - Street Mode</h2>
+        <p>Descubra a coleção de tênis que combina conforto, estilo e performance para cada passo do seu dia!</p>
+
+        <section id="nike-initiator">
+            <div class="produto">
+                <img src="imagem/initiator.jpg" alt="nike-initiator">
+                <h3>Nike Initiator</h3>
+                <p>Desempenho e estilo para o seu treino.</p>
+                <p class="preco">R$ 399,99</p>
+                <button onclick="addToCart('Nike Initiator', 399.99)">Adicionar ao Carrinho</button>
+        </div>
+        </section>
+
+        <section id="staple">
+            <div class="produto">
+                <img src="imagem/staple.jpeg" width="200" height="200" alt="Puma 180 Staple">
+                <h3>Puma 180 Staple</h3>
+                <p>Estilo urbano com máximo conforto.</p>
+                <p class="preco">R$ 349,99</p>
+                <button onclick="addToCart('Puma 180 Staple', 349.99)">Adicionar ao Carrinho</button>
+        </div>
+        </section>
+
+        <section id="excee">
+            <div class="produto">
+                <img src="imagem/excee.webp" width="200" height="200" alt="Nike Excee">
+                <h3>Nike Excee</h3>
+                <p>Design clássico com toque moderno.</p>
+                <p class="preco">R$ 469,99</p>
+                <button onclick="addToCart('Nike Excee', 469.99)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+          
+        <section id="cart">
+            <div class="cart-content">
+                <h2>Carrinho de Compras</h2>
+                <ul id="cart-items">
+                    <!-- Itens do carrinho aparecerão aqui -->
+                </ul>
+                <p id="total-price">Total: R$ 0,00</p>
+                <button onclick="clearCart()">Limpar Carrinho</button>
+                <button onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Tênis - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="carrinho.js"></script> <!-- Link para o arquivo JS -->
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<section>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bermudas - Street Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Street Mode</h1>
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                
+                <!-- Menu suspenso para Camisas -->
+                <li class="dropdown">
+                    <a href="camisa.html">Camisas</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+                
+                <!-- Menu suspenso para Bermudas -->
+                <li class="dropdown">
+                    <a href="bermuda.html">Bermudas</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+                
+                <!-- Menu suspenso para Tênis -->
+                <li class="dropdown">
+                    <a href="tenis.html">Tênis</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <h2>Bermudas - Street Mode</h2>
+        <p>Confira nossa coleção de bermudas para o seu estilo de vida.</p>
+
+        <section class="bermuda-cargo">
+            <div class="produto">
+                <img src="imagem/MED_produto-bermuda-cargo-stranger-sarja-bege-8711.webp" width="200" height="200" alt="Bermuda Cargo">
+                <h3>Bermuda Cargo Masculina</h3>
+                <p class="preco">R$ 99,00</p>
+                <button onclick="addToCart('Bermuda Cargo', 99,99)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <h2>Bermudas - Street Mode</h2>
+        <p>Bermuda confortável para o seu estilo de vida e lazer.</p>
+
+        <section class="bermuda-cargo">
+            <div class="produto">
+                <img src="imagem/download.jpg"  width="200" height="200" alt="Bermuda Jeans">
+                <h3>Bermuda Jeans Masculina</h3>
+                <p class="preco">R$ 69,00</p>
+                <button onclick="addToCart('Bermuda Jeans', 69,99)">Adicionar ao Carrinho</button>
+            </div>
+            </section>
+
+            <h2>Bermudas - Street Mode</h2>
+            <p>Na promoção imperdível, não perca.</p>
+    
+            <section class="bermuda-cargo">
+                <div class="produto">
+                    <img src="imagem/site_1600x2000_foto-site_shorts-cinza-ace_0000s_0006_7522-copy-3-xmmqk4eecy.webp"  width="200" height="200" alt="Bermuda Cargo">
+                    <h3>Bermuda Moletom Masculina</h3>
+                    <p class="preco">R$ 65,00</p>
+                    <button onclick="addToCart('Bermuda Moletom', 65,90)">Adicionar ao Carrinho</button>
+                </div>
+    </main>
+    <section id="cart">
+        <div class="cart-content">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho aparecerão aqui -->
+            </ul>
+            <p id="total-price">Total: R$ 0,00</p>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Street Mode - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="carrinho.js"></script>
+
+</body>
+</html>
